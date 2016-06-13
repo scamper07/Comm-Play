@@ -24,12 +24,9 @@ print "* Sending client details."
 result = subprocess.check_output("hostname")
 s.send(result.strip("\n"))
 
-
-print "[" +device_ip  +"]" + " : " + "Sending control data."
-
 while True:
     try:
-        key_data = raw_input()
+        key_data = raw_input("Enter command: ")
         print "[" +device_ip +"]" + " : " + str(key_data)
         s.send(str(key_data))
     except KeyboardInterrupt:
