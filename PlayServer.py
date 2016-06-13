@@ -5,8 +5,8 @@ from thread import start_new_thread
 import threading
 import pykeyboard
 
-# host_ip = "10.0.0.1"
-host_ip = "127.0.0.1"
+host_ip = "192.168.1.103"
+#host_ip = "127.0.0.1"
 host_port = 9000
 
 client_number = 0

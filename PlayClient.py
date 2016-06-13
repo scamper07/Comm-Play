@@ -4,8 +4,8 @@ import subprocess
 import netifaces
 import sys
 
-#host_ip = "10.0.0.1"
-host_ip = "127.0.0.1"
+host_ip = "192.168.1.103"
+#host_ip = "127.0.0.1"
 host_port = 9000
 device_ip =netifaces.ifaddresses('wlan0')[2][0]['addr']
 
