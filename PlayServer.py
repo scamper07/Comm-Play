@@ -99,4 +99,4 @@ while True:
     client_number += 1
 
 # s.close()
-#test1
+#cleared idea from repo
