@@ -35,6 +35,3 @@ while True:
         sys.exit()
 
 #s.close()
-#pavan-test
-#pre-test
-#koushik-test
