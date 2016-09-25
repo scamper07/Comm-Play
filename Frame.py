@@ -185,6 +185,6 @@ class Frame(wx.Frame):
             secsPlayed = time.strftime('%M:%S', time.gmtime(offset))
             self.trackCounter.SetLabel(secsPlayed)
 if __name__ == "__main__":
-    app = wx.App()
-    Frame(None,-1,title='MPlayer',mplayer='~/Applications/MPlayer OSX Extended')
+    app = wx.App(False)
+    Frame(None,-1,title='MPlayer',mplayer='C:\Users\Pavan\Downloads\MPlayer-x86_64-r37875+gce466d0\mplayer.exe')
     app.MainLoop()

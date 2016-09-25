@@ -1,13 +1,13 @@
 import socket
 import time
 import subprocess
-import netifaces
+#import netifaces
 import sys
 
 host_ip = "192.168.1.103"
 #host_ip = "127.0.0.1"
 host_port = 9000
-device_ip =netifaces.ifaddresses('wlan0')[2][0]['addr']
+#device_ip =netifaces.ifaddresses('wlan0')[2][0]['addr']
 
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 print "* Socket created successfully!"
@@ -27,7 +27,7 @@ s.send(result.strip("\n"))
 while True:
     try:
         key_data = raw_input("Enter command: ")
-        print "[" +device_ip +"]" + " : " + str(key_data)
+        #print "[" +device_ip +"]" + " : " + str(key_data)
         s.send(str(key_data))
     except KeyboardInterrupt:
         print "\nForce stopping client!"
